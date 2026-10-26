@@ -52,7 +52,7 @@ void OnDataRecv(const uint8_t * mac, const uint8_t *incomingData, int len) {
 
   // Print structured output for monitoring / logging
   Serial.println("----------------------------------------");
-  Serial.print("Event #": );
+  Serial.print("Event #: ");
   Serial.println(incomingPacket.sequence);
   Serial.print("Vibration: ");
   Serial.println(incomingPacket.vibration ? "DETECTED" : "None");
